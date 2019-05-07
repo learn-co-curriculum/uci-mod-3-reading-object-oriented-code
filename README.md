@@ -1,4 +1,4 @@
-# Reading Complex Object Oriented Code
+# Reading Complex Object-Oriented Code
 
 ## Learning Goals
 
@@ -44,8 +44,8 @@ When trying to understand procedural code, figuring out where to start takes a
 few quick steps:
 
 A. Find a method which calls other methods  
-B. Check to see if this method is called in any _other_ method   
-C. If true, repeat step B for the new method. If false, start process  
+B. Check to see if this method is called in any _other_ method  
+C. If true, repeat step B for the new method. If false, start process
 
 The best place to start when trying to get a handle on Object-Oriented code is
 to find a place where an _instance_ has a method called. When we see
@@ -54,8 +54,7 @@ having its `full_name` method called.
 
 Next, we want to find where that _instance_ was created. We can use our
 editor's find previous of `current_user` to find the place where `current_user`
-was assigned or "instantiated." We should track back to find: `current_user =
-Person.new("Xena", "Warrior-Princess")`. Because _instances_ of `class`es are
+was assigned or "instantiated." We should track back to find: `current_user = Person.new("Xena", "Warrior-Princess")`. Because _instances_ of `class`es are
 created with initial data that they manage ("instance data") we need to know
 what the _instance_ was "born" knowing. It's sometimes handy to write this down
 on a notepad or sticky note.
@@ -65,7 +64,7 @@ Now let's find the `class`'s definition of the method e.g. `full_name`
 ## Identify Inputs and Outputs
 
 In code following, standard Ruby `class` syntax inputs will most often be found
-in the `initialize` method. Inputs, however, can _also_ be passed in to any
+in the `initialize` method. Inputs, however, can _also_ be passed into any
 method:
 
 ```ruby
